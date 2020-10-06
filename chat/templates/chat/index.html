@@ -1,0 +1,36 @@
+{% extends 'chat/layout.html' %}
+
+{% block title%}
+    Index
+{% endblock %}
+
+{% block body %}
+    <div class="alert alert-warning textcenter" id="errorx" style="display: none;">
+        <!-- FOR DISPLAYING ERRORS -->
+    </div>
+
+    <div class="chat-container">
+        <div class="chatroom" id="chatroom">
+            {% for message in messages %}
+                <div class="message" id="{{message.id}}">
+                    <div class="sender">{{message.user.username}} :: </div>
+                    <div class="sentMessage">{{message.message}}</div>
+                </div>
+
+            {% empty %}
+                <div class="message" id="0">
+                    <div class="sender">Admin :: </div>
+                    <div class="sentMessage">Welcome to the chat!</div>
+                </div>
+            {% endfor %}
+        </div>
+        <form id="chatForm">
+            {% csrf_token %}
+            <div class="form-group messenger">
+                <input id="messenger" name="message" class="form-control" type="text" placeholder="Enter a message!"/>
+                <button class="btn btn-primary">Send</button>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}
