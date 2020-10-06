@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'abjmz#j@-_ux+0i)nxhl8nj+9phd57
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['tranquil-dusk-56108.herokuapp.com']
+ALLOWED_HOSTS = ['tranquil-dusk-56108.herokuapp.com', 'django-chatroom.herokuapp.com']
 
 
 # Application definitions
