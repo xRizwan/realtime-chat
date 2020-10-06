@@ -6,7 +6,7 @@ This project makes use of 'polling', where the client makes request to the serve
 
 Users can login, register and send messages to each other.
 
-This project however is quite simple but i believe it's complex enough for a final project, it contains two Django Models(User and Message), RestAPI routes and Javascript on the client-side to perform client-side operations.
+it contains two Django Models(User and Message), RestAPI routes and Javascript on the client-side to perform client-side operations.
 
 There are Two API routes and Four basic routes which are all explained below:
 
