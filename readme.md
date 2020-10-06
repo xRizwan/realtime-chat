@@ -1,3 +1,5 @@
+### Hosted Live On https://django-chatroom.herokuapp.com/
+
 This project contains only one app, namely 'chat'.
 
 The main premise of this project is real-time chat between users.
