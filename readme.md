@@ -62,9 +62,11 @@ models.py contains Two Models.
 
 #### How to Run?
 * Download python 3.x
-* type "pip install Django" in the command line
-* type "pip install djangorestframework" in the command line
+* Type "pip install Django" in the command line
+* Type "pip install djangorestframework" in the command line
 * Clone or download this Repository.
 * Go into the Repository directory.
-* type "python manage.py runserver" in command line.
+* Type "python manage.py makemigrations".
+* Type "python manage.py migrate".
+* Type "python manage.py runserver" in command line.
 
