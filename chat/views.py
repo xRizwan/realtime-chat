@@ -31,7 +31,7 @@ def login_view(request):
             login(request, user)
             return HttpResponseRedirect(reverse("index"))
         else:
-            return render(request, "network/login.html", {
+            return render(request, "chat/login.html", {
                 "message" : "Invalid username or password!"
             })
     else:
